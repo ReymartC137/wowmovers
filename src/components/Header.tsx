@@ -34,28 +34,199 @@ export default function Header() {
         <div className="hidden md:block border-b border-gray-100">
           <div className="container mx-auto px-4 md:px-6">
             <nav className="flex items-center justify-between h-14 text-sm font-medium text-gray-600">
-              <Link href="/interstate_moving_companies" className="hover:text-primary transition-colors">
-                Long Distance Moving
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
-                Top local movers
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
-                Best moving container companies
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
-                Truck rental
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
-                Auto transport
-              </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
-                Storage and Junk Removal
-              </Link>
+              <div className="group static">
+                <Link href="#" className="flex items-center h-14 hover:text-primary transition-colors relative z-10">
+                  Moving Companies
+                </Link>
+                <div className="absolute left-0 top-full w-full bg-white shadow-lg border-t border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
+                  <div className="container mx-auto px-4 md:px-6 py-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                      {/* Column 1 */}
+                      <div className="space-y-8">
+                        <div>
+                          <h3 className="text-lg font-bold text-gray-900 mb-4">Moving Containers</h3>
+                          <ul className="space-y-3 text-sm text-gray-600">
+                            <li><Link href="#" className="hover:text-primary hover:underline">Best Interstate Moving and Storage</Link></li>
+                            <li><Link href="#" className="hover:text-primary hover:underline">Top Local Movers</Link></li>
+                            <li><Link href="#" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-bold text-gray-900 mb-4">Recommendation</h3>
+                          <ul className="space-y-3 text-sm text-gray-600">
+                            <li><Link href="#" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
+                            <li><Link href="#" className="hover:text-primary hover:underline">Cheapest Moving Container Companies</Link></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* Column 2 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Moving Container Reviews</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">U-Pack</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">1-800-PACK-RAT</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">PODS</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">SMARTBOX</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">U-Haul</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Two Men And A Truck</Link></li>
+                        </ul>
+                      </div>
+
+                      {/* Column 3 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Learn More</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">What Size Moving Container Do You Need?</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Things to Consider when using DIY Storage</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">The Average Cost of Moving Containers</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">How Moving Containers Can Save You Money and Stress</Link></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="group static">
+                <Link href="#" className="flex items-center h-14 hover:text-primary transition-colors relative z-10">
+                  Truck Rental
+                </Link>
+                <div className="absolute left-0 top-full w-full bg-white shadow-lg border-t border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
+                  <div className="container mx-auto px-4 md:px-6 py-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                      {/* Column 1 */}
+                      <div className="space-y-8">
+                        <div>
+                          <h3 className="text-lg font-bold text-gray-900 mb-4">Recommendation</h3>
+                          <ul className="space-y-3 text-sm text-gray-600">
+                            <li><Link href="#" className="hover:text-primary hover:underline">Best Moving Truck Rental Companies</Link></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* Column 2 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Truck Rentals Reviews</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">U-Haul Truck Rental</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Budget Truck Rental</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Penske Truck Rental</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Home Depot</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Sherpa Auto Transport</Link></li>
+                        </ul>
+                      </div>
+
+                      {/* Column 3 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Learn More</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">What to Consider Before Renting a Moving Truck</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Rent The Cheapest Moving Truck</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">The Best Moving Companies That Provides Trailer Rental</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">How Much Does It Cost to Rent A Truck?</Link></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="group static">
+                <Link href="#" className="flex items-center h-14 hover:text-primary transition-colors relative z-10">
+                  Auto Transport
+                </Link>
+                <div className="absolute left-0 top-full w-full bg-white shadow-lg border-t border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
+                  <div className="container mx-auto px-4 md:px-6 py-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                      {/* Column 1 */}
+                      <div className="space-y-8">
+                        <div>
+                          <h3 className="text-lg font-bold text-gray-900 mb-4">Recommendation</h3>
+                          <ul className="space-y-3 text-sm text-gray-600">
+                            <li><Link href="#" className="hover:text-primary hover:underline">Best Auto Transport Companies</Link></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* Column 2 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Auto Transport Reviews</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">International Van lines</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">United Van Lines</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Penske</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">U-haul</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Budget</Link></li>
+                        </ul>
+                      </div>
+
+                      {/* Column 3 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Learn More</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">How to Ship your Car Secure and Safe?</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Car Shipping Costs Explained</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Is Your Car Safe During Auto Transport? Is Shipping a Car Safe?</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">What's The Cheapest Way and How to Calculate Car Shipping Services</Link></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="group static">
+                <Link href="#" className="flex items-center h-14 hover:text-primary transition-colors relative z-10">
+                  Storage and Junk Removal
+                </Link>
+                <div className="absolute left-0 top-full w-full bg-white shadow-lg border-t border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
+                  <div className="container mx-auto px-4 md:px-6 py-8">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                      {/* Column 1 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Storage Recommendations</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">Best Self-Storage Companies</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">When It's Necessary To Use Climate Controlled Storage?</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">The Ultimate Guide to Storage Unit</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">How To Choose The Right Storage Unit For Your Furniture</Link></li>
+                        </ul>
+                      </div>
+
+                      {/* Column 2 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Storage Review</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">PODS</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">1-800-Pack-Rat</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">United Van Lines Storage</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">College Hunks</Link></li>
+                        </ul>
+                      </div>
+
+                      {/* Column 3 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Junk Removal Recommendations</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">Best Junk Removal Companies</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Why We Love College Hunks Hauling Junk and Moving?</Link></li>
+                        </ul>
+                      </div>
+
+                      {/* Column 4 */}
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-4">Junk Removal Reviews</h3>
+                        <ul className="space-y-3 text-sm text-gray-600">
+                          <li><Link href="#" className="hover:text-primary hover:underline">U-haul</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">1-800-GOT-JUNK</Link></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </nav>
           </div>
         </div>
-      </header>
+      </header >
       <QuoteForm isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
     </>
   );
