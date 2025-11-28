@@ -34,7 +34,7 @@ export default function Header() {
         <div className="hidden md:block border-b border-gray-100">
           <div className="container mx-auto px-4 md:px-6">
             <nav className="flex items-center justify-between h-14 text-sm font-medium text-gray-600">
-              <Link href="#" className="hover:text-primary transition-colors">
+              <Link href="/interstate_moving_companies" className="hover:text-primary transition-colors">
                 Long Distance Moving
               </Link>
               <Link href="#" className="hover:text-primary transition-colors">
