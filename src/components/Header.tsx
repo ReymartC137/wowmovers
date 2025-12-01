@@ -46,8 +46,8 @@ export default function Header() {
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-4">Moving Containers</h3>
                           <ul className="space-y-3 text-sm text-gray-600">
-                            <li><Link href="#" className="hover:text-primary hover:underline">Best Interstate Moving and Storage</Link></li>
-                            <li><Link href="#" className="hover:text-primary hover:underline">Top Local Movers</Link></li>
+                            <li><Link href="/interstate_moving_companies" className="hover:text-primary hover:underline">Best Interstate Moving and Storage</Link></li>
+                            <li><Link href="/top_local_movers" className="hover:text-primary hover:underline">Top Local Movers</Link></li>
                             <li><Link href="#" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
                           </ul>
                         </div>

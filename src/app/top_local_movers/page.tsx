@@ -53,26 +53,9 @@ const afterMovingItems = [
 ];
 
 const companies: Company[] = [
+ 
   {
     id: 1,
-    title: "American Van Lines",
-    description: "Founded in 1995, American Van Lines is licensed, insured and registered with the American Moving & Storage Association (ProMover) standard. They serve residential and commercial relocations with multiple truck locations across the U.S.",
-    ratings: "4.5/5",
-    contact: "(855) 584-1894",
-    logo: "/images/interstate_assets/inter1-logo.png",
-    img: "/images/interstate_assets/inter1-img.png"
-  },
-  {
-    id: 2,
-    title: "United Van Lines",
-    description: "A full-service mover with over 340 agent partners, offering local, long-distance, corporate and government relocation services. Known for straightforward pricing and specialty services.",
-    ratings: "4.5/5",
-    contact: "(888) 969-5498",
-    logo: "/images/interstate_assets/inter2-logo.png",
-    img: "/images/interstate_assets/inter2-img.png"
-  },
-  {
-    id: 3,
     title: "College Hunks Hauling Junk and Moving",
     description: "A national full-service mover that also specializes in junk removal and donation pickup. A good choice if you want to declutter during your move.",
     ratings: "4.5/5",
@@ -81,7 +64,7 @@ const companies: Company[] = [
     img: "/images/interstate_assets/inter3-img.png"
   },
   {
-    id: 4,
+    id: 2,
     title: "1-800-PACK-RAT",
     description: "Offers portable storage containers and moving support for local, cross-country and even sea transport. Services include moving supplies, loading/unloading, and secure transport.",
     ratings: "4/5",
@@ -89,17 +72,9 @@ const companies: Company[] = [
     logo: "/images/interstate_assets/inter4-logo.png",
     img: "/images/interstate_assets/inter4-img.png"
   },
+
   {
-    id: 5,
-    title: "Bekins Van Lines",
-    description: "With decades of experience, Bekins emphasizes smooth transitions for interstate and commercial moves — from packing and planning to delivery.",
-    ratings: "3.5/5",
-    contact: "(888) 969-4926",
-    logo: "/images/interstate_assets/inter5-logo.png",
-    img: "/images/interstate_assets/inter5-img.png"
-  },
-  {
-    id: 6,
+    id: 3,
     title: "Two Men And A Truck",
     description: "A full-service mover operating over 380 locations globally, originally started by two students in the 1980s. Known for customer-focused service and local/long-distance moves.",
     ratings: "4/5",
@@ -108,7 +83,7 @@ const companies: Company[] = [
     img: "/images/interstate_assets/inter6-img.png"
   },
   {
-    id: 7,
+    id: 4,
     title: "All My Sons Moving & Storage",
     description: "A family-owned and operated moving company with four generations of moving knowledge, offering complete moving services with emphasis on local support.",
     ratings: "4/5",
@@ -117,7 +92,7 @@ const companies: Company[] = [
     img: "/images/interstate_assets/inter7-img.png"
   },
   {
-    id: 8,
+    id: 5,
     title: "PODS",
     description: "Leading provider of portable storage containers for moving and storage. Offers flexible container options for local and long-distance moves.",
     ratings: "4.5/5",
@@ -126,7 +101,7 @@ const companies: Company[] = [
     img: "/images/interstate_assets/inter8-img.png"
   },
   {
-    "id": 9,
+    "id": 6,
     "title": "U-Haul",
     "description": "A household name in truck rentals and moving equipment. Offers multiple truck sizes, trailers, and moving supplies — ideal for DIY local moves.",
     "ratings": "3.5/5",
@@ -135,7 +110,7 @@ const companies: Company[] = [
     "img": "/images/interstate_assets/inter9-img.png"
   },
   {
-    "id": 10,
+    "id": 7,
     "title": "Penske",
     "description": "One of the largest truck rental companies in the U.S., offering newer trucks and reliable service for rentals and self-moves.",
     "ratings": "4/5",
@@ -143,44 +118,9 @@ const companies: Company[] = [
     "logo": "/images/interstate_assets/inter10-logo.png",
     "img": "/images/interstate_assets/inter10-img.png"
   },
+
   {
-    "id": 11,
-    "title": "UPack",
-    "description": "Offers a ‘pay-for-what-you-use’ model for long-distance moves, no deposit required. A budget-friendly full-service option.",
-    "ratings": "4.5/5",
-    "contact": "(888) 964-3505",
-    "logo": "/images/interstate_assets/inter11-logo.png",
-    "img": "/images/interstate_assets/inter11-img.png"
-  },
-  {
-    "id": 12,
-    "title": "Smartbox",
-    "description": "A lower-cost moving container company offering portable storage and moving container services at competitive prices.",
-    "ratings": "3.5/5",
-    "contact": "(888) 965-3342",
-    "logo": "/images/interstate_assets/inter12-logo.png",
-    "img": "/images/interstate_assets/inter12-img.png"
-  },
-  {
-    "id": 13,
-    "title": "Budget Truck Rental",
-    "description": "An affordable truck rental service option, aimed at cost-conscious local moves (though add-ons may bring extra cost).",
-    "ratings": "4/5",
-    "contact": "(888) 676-0151",
-    "logo": "/images/interstate_assets/inter13-logo.png",
-    "img": "/images/interstate_assets/inter13-img.png"
-  },
-  {
-    "id": 14,
-    "title": "International Van lines",
-    "description": "A full-service mover offering domestic and international relocation, commercial moves, storage and packing/crating services. Features include 30 days free storage with every move.",
-    "ratings": "5/5",
-    "contact": "(888) 963-7266",
-    "logo": "/images/interstate_assets/inter14-logo.png",
-    "img": "/images/interstate_assets/inter14-img.png"
-  },
-  {
-    "id": 15,
+    "id": 8,
     "title": "Ace Relocation Systems",
     "description": "With 10 U.S. locations, global coverage and partnership with Atlas Van Lines, Ace offers residential and corporate relocation support with dedicated technology and customer service.",
     "ratings": "4.5/5",
@@ -221,7 +161,7 @@ export default function InterStateMovingCompaniesPage() {
       {/* Hero Section with Image */}
       <div className="relative h-[500px] w-full">
         <img
-          src="/images/truck-interstate.png"
+          src="/images/dispatch.jpg"
           alt="Interstate Moving Truck"
           className="h-full w-full object-cover"
         />
@@ -233,7 +173,7 @@ export default function InterStateMovingCompaniesPage() {
         <div className="rounded-3xl bg-white p-8 shadow-xl sm:p-12">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-[#0B2341] sm:text-5xl">
-              Best Local Moving Companies
+              Best Interstate Moving Companies
             </h1>
 
             <div className="mt-8 space-y-6 text-lg text-gray-600">
