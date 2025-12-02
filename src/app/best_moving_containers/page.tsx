@@ -56,15 +56,6 @@ const companies: Company[] = [
 
   {
     id: 1,
-    title: "College Hunks Hauling Junk and Moving",
-    description: "A national full-service mover that also specializes in junk removal and donation pickup. A good choice if you want to declutter during your move.",
-    ratings: "4.5/5",
-    contact: "(888) 965-3032",
-    logo: "/images/interstate_assets/inter3-logo.png",
-    img: "/images/interstate_assets/inter3-img.png"
-  },
-  {
-    id: 2,
     title: "1-800-PACK-RAT",
     description: "Offers portable storage containers and moving support for local, cross-country and even sea transport. Services include moving supplies, loading/unloading, and secure transport.",
     ratings: "4/5",
@@ -74,25 +65,7 @@ const companies: Company[] = [
   },
 
   {
-    id: 3,
-    title: "Two Men And A Truck",
-    description: "A full-service mover operating over 380 locations globally, originally started by two students in the 1980s. Known for customer-focused service and local/long-distance moves.",
-    ratings: "4/5",
-    contact: "(888) 671-3606",
-    logo: "/images/interstate_assets/inter6-logo.png",
-    img: "/images/interstate_assets/inter6-img.png"
-  },
-  {
-    id: 4,
-    title: "All My Sons Moving & Storage",
-    description: "A family-owned and operated moving company with four generations of moving knowledge, offering complete moving services with emphasis on local support.",
-    ratings: "4/5",
-    contact: "(888) 965-2825",
-    logo: "/images/interstate_assets/inter7-logo.png",
-    img: "/images/interstate_assets/inter7-img.png"
-  },
-  {
-    id: 5,
+    id: 2,
     title: "PODS",
     description: "Leading provider of portable storage containers for moving and storage. Offers flexible container options for local and long-distance moves.",
     ratings: "4.5/5",
@@ -101,7 +74,7 @@ const companies: Company[] = [
     img: "/images/interstate_assets/inter8-img.png"
   },
   {
-    "id": 6,
+    "id": 3,
     "title": "U-Haul",
     "description": "A household name in truck rentals and moving equipment. Offers multiple truck sizes, trailers, and moving supplies — ideal for DIY local moves.",
     "ratings": "3.5/5",
@@ -109,25 +82,26 @@ const companies: Company[] = [
     "logo": "/images/interstate_assets/inter9-logo.png",
     "img": "/images/interstate_assets/inter9-img.png"
   },
-  {
-    "id": 7,
-    "title": "Penske",
-    "description": "One of the largest truck rental companies in the U.S., offering newer trucks and reliable service for rentals and self-moves.",
-    "ratings": "4/5",
-    "contact": "(888) 964-4932",
-    "logo": "/images/interstate_assets/inter10-logo.png",
-    "img": "/images/interstate_assets/inter10-img.png"
-  },
 
   {
-    "id": 8,
-    "title": "Ace Relocation Systems",
-    "description": "With 10 U.S. locations, global coverage and partnership with Atlas Van Lines, Ace offers residential and corporate relocation support with dedicated technology and customer service.",
+    "id": 4,
+    "title": "UPack",
+    "description": "Offers a ‘pay-for-what-you-use’ model for long-distance moves, no deposit required. A budget-friendly full-service option.",
     "ratings": "4.5/5",
-    "contact": "(888) 970-2361",
-    "logo": "/images/interstate_assets/inter15-logo.png",
-    "img": "/images/interstate_assets/inter15-img.png"
-  }
+    "contact": "(888) 964-3505",
+    "logo": "/images/interstate_assets/inter11-logo.png",
+    "img": "/images/interstate_assets/inter11-img.png"
+  },
+  {
+    "id": 5,
+    "title": "Smartbox",
+    "description": "A lower-cost moving container company offering portable storage and moving container services at competitive prices.",
+    "ratings": "3.5/5",
+    "contact": "(888) 965-3342",
+    "logo": "/images/interstate_assets/inter12-logo.png",
+    "img": "/images/interstate_assets/inter12-img.png"
+  },
+
 ];
 
 function StarRating({ rating }: { rating: string }) {
@@ -161,7 +135,7 @@ export default function InterStateMovingCompaniesPage() {
       {/* Hero Section with Image */}
       <div className="relative h-[500px] w-full">
         <img
-          src="/images/dispatch.jpg"
+          src="/images/truck-interstate.png"
           alt="Interstate Moving Truck"
           className="h-full w-full object-cover"
         />
@@ -173,12 +147,12 @@ export default function InterStateMovingCompaniesPage() {
         <div className="rounded-3xl bg-white p-8 shadow-xl sm:p-12">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-[#0B2341] sm:text-5xl">
-              Best Local Moving Companies
+              Best Moving Container Companies
             </h1>
 
             <div className="mt-8 space-y-6 text-lg text-gray-600">
               <p>
-                We have researched a lot of local moving and storage companies to find the best for your move. We will direct you to the best moving companies with low expenses. We are working hard to find a reliable company that will provide what you need!
+                We have researched a lot of interstate moving and storage companies to find the best for your move. We will direct you to the best moving companies with low expenses. We are working hard to find a reliable company that will provide what you need!
               </p>
               <p>
                 Moving to a new state can be exciting, but it also comes with challenges—finding the right moving company shouldn't be one of them. With so many options available, choosing a reliable and affordable mover can feel overwhelming. That's why we've done the research for you!
@@ -274,6 +248,27 @@ export default function InterStateMovingCompaniesPage() {
           </div>
         ))}
       </div>
+
+      {/* How Does Moving Container Companies Work Section */}
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="w-[90%] mx-auto">
+            <h2 className="text-3xl font-bold text-[#0B2341] sm:text-4xl mb-6">
+              How Does Moving Container Companies Work?
+            </h2>
+            <div className="space-y-6 text-lg text-gray-600">
+              <p>
+                In companies, they have a different process but they are almost similar. Moving storage companies will send you a container a few days before your move. Customers need to pack his/her belongings when the container is ready to move. Then the company will pick the container up and deliver it to its destination. The company delivers a portable container to its destination. Once finished unloading your belongings, the company will pick the container. There are newcomers in the moving industry, so better do your research first to avoid headaches in the future.
+              </p>
+              <p>
+                You can also use the moving container as storage. Companies allow its customers to store their personal property. Just make sure that the container storage is climate controlled and secured. The customer needs to sign a contract for storage. [ <Link href="/interstate_moving_companies" className="text-[#76Dba8] hover:underline">Learn more about Best Interstate Moving and Storage</Link> ]
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* Moving Tips Section */}
       <section className="relative overflow-hidden bg-[#0B2341] py-24">
@@ -628,7 +623,60 @@ export default function InterStateMovingCompaniesPage() {
           </div>
         </div>
       </section>
+      {/* PODS Story Section */}
+      <section className="bg-[#F0FDF7] py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-16">
+            <h2 className="text-center text-3xl font-bold text-[#0B2341] sm:text-4xl max-w-4xl mx-auto leading-tight">
+              Watch the story of Matt & Amy on how PODS moving and storage help them move long distance.
+            </h2>
 
+            <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+              {/* Left Column: Text */}
+              <div className="space-y-8">
+                <div>
+                  <p className="text-lg font-medium text-gray-500">
+                    Video Credit: <span className="text-[#76Dba8]">PODS Long-Distance Moving Story: Matt & Amy</span>
+                  </p>
+                </div>
+                <div className="space-y-6 text-lg text-gray-600">
+                  <p>
+                    If you are looking for a place to put your old belongings or you need storage for moving out, a good moving container or storage company will provide what exactly you need. To help you decide and to help you move easier and safer, here are tips to help you find good container and storage companies.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Column: MacBook Mockup with Video */}
+              <div className="relative w-full flex justify-center">
+                <div className="relative aspect-[1000/580] w-full scale-[1.5] origin-center">
+                  {/* MacBook Image */}
+                  <img
+                    src="/png/apple-macbookpro14-front.png"
+                    alt="MacBook Pro"
+                    className="absolute inset-0 z-10 h-full w-full object-contain pointer-events-none"
+                  />
+
+                  {/* Video Container - Positioned inside the screen area */}
+                  {/* These percentages are approximate based on standard MacBook mockups */}
+                  {/* Video Container - Positioned inside the screen area */}
+                  <div className="absolute left-[15%] top-[10%] z-0 h-[79%] w-[70%] bg-black rounded-t-[2%] overflow-hidden">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/19yeW67nxXM"
+                      title="PODS Long-Distance Moving Story: Matt & Amy"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="h-full w-full"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* How to Choose the Best Interstate Moving Company Section */}
       <section className="bg-white">
         {/* Hero Image */}

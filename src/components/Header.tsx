@@ -48,7 +48,7 @@ export default function Header() {
                           <ul className="space-y-3 text-sm text-gray-600">
                             <li><Link href="/interstate_moving_companies" className="hover:text-primary hover:underline">Best Interstate Moving and Storage</Link></li>
                             <li><Link href="/top_local_movers" className="hover:text-primary hover:underline">Top Local Movers</Link></li>
-                            <li><Link href="#" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
+                            <li><Link href="/best_moving_containers" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
                           </ul>
                         </div>
                         <div>
