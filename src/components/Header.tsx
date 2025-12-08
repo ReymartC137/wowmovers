@@ -65,10 +65,10 @@ export default function Header() {
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Moving Container Reviews</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
                           <li><Link href="/moving-containers/u-pack-review" className="hover:text-primary hover:underline">U-Pack</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">1-800-PACK-RAT</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">PODS</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">SMARTBOX</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">U-Haul</Link></li>
+                          <li><Link href="/moving-containers/1-800-pack-rat-review/" className="hover:text-primary hover:underline">1-800-PACK-RAT</Link></li>
+                          <li><Link href="/moving-containers/pods-review" className="hover:text-primary hover:underline">PODS</Link></li>
+                          <li><Link href="/moving-containers/smartbox-review" className="hover:text-primary hover:underline">SMARTBOX</Link></li>
+                          <li><Link href="/moving-containers/u-haul-review" className="hover:text-primary hover:underline">U-Haul</Link></li>
                           <li><Link href="#" className="hover:text-primary hover:underline">Two Men And A Truck</Link></li>
                         </ul>
                       </div>
