@@ -108,9 +108,9 @@ export default function Header() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Truck Rentals Reviews</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
-                          <li><Link href="#" className="hover:text-primary hover:underline">U-Haul Truck Rental</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">Budget Truck Rental</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">Penske Truck Rental</Link></li>
+                          <li><Link href="/truck-rentals/u-haul-truck-rental-review/" className="hover:text-primary hover:underline">U-Haul Truck Rental</Link></li>
+                          <li><Link href="/truck-rentals/budget-truck-review/" className="hover:text-primary hover:underline">Budget Truck Rental</Link></li>
+                          <li><Link href="/truck-rentals/penske-review/" className="hover:text-primary hover:underline">Penske Truck Rental</Link></li>
                           <li><Link href="#" className="hover:text-primary hover:underline">Home Depot</Link></li>
                           <li><Link href="#" className="hover:text-primary hover:underline">Sherpa Auto Transport</Link></li>
                         </ul>
