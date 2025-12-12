@@ -99,7 +99,7 @@ export default function Header() {
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-4">Recommendation</h3>
                           <ul className="space-y-3 text-sm text-gray-600">
-                            <li><Link href="#" className="hover:text-primary hover:underline">Best Moving Truck Rental Companies</Link></li>
+                            <li><Link href="/best-moving-truck-rental-companies-recommendation" className="hover:text-primary hover:underline">Best Moving Truck Rental Companies</Link></li>
                           </ul>
                         </div>
                       </div>
