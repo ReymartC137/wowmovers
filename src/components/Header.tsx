@@ -54,8 +54,8 @@ export default function Header() {
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-4">Recommendation</h3>
                           <ul className="space-y-3 text-sm text-gray-600">
-                            <li><Link href="/recommended-moving-containers" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
-                            <li><Link href="/cheapest-moving-container-recommendation" className="hover:text-primary hover:underline">Cheapest Moving Container Companies</Link></li>
+                            <li><Link href="#" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
+                            <li><Link href="#" className="hover:text-primary hover:underline">Cheapest Moving Container Companies</Link></li>
                           </ul>
                         </div>
                       </div>
@@ -99,7 +99,7 @@ export default function Header() {
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-4">Recommendation</h3>
                           <ul className="space-y-3 text-sm text-gray-600">
-                            <li><Link href="/best-moving-truck-rental-companies-recommendation" className="hover:text-primary hover:underline">Best Moving Truck Rental Companies</Link></li>
+                            <li><Link href="#" className="hover:text-primary hover:underline">Best Moving Truck Rental Companies</Link></li>
                           </ul>
                         </div>
                       </div>
@@ -151,9 +151,9 @@ export default function Header() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Auto Transport Reviews</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
-                          <li><Link href="#" className="hover:text-primary hover:underline">International Van lines</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">United Van Lines</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">Penske</Link></li>
+                          <li><Link href="/auto-transport/international-van-lines-review" className="hover:text-primary hover:underline">International Van lines</Link></li>
+                          <li><Link href="/auto-transport/united-van-lines-review" className="hover:text-primary hover:underline">United Van Lines</Link></li>
+                          <li><Link href="/auto-transport/penske-review" className="hover:text-primary hover:underline">Penske</Link></li>
                           <li><Link href="#" className="hover:text-primary hover:underline">U-haul</Link></li>
                           <li><Link href="#" className="hover:text-primary hover:underline">Budget</Link></li>
                         </ul>
