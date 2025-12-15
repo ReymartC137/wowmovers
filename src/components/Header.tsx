@@ -46,9 +46,9 @@ export default function Header() {
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-4">Moving Containers</h3>
                           <ul className="space-y-3 text-sm text-gray-600">
-                            <li><Link href="/interstate_moving_companies" className="hover:text-primary hover:underline">Best Interstate Moving and Storage</Link></li>
-                            <li><Link href="/top_local_movers" className="hover:text-primary hover:underline">Top Local Movers</Link></li>
-                            <li><Link href="/best_moving_containers" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
+                            <li><Link href="/interstate-moving-companies" className="hover:text-primary hover:underline">Best Interstate Moving and Storage</Link></li>
+                            <li><Link href="/top-local-movers" className="hover:text-primary hover:underline">Top Local Movers</Link></li>
+                            <li><Link href="/best-moving-containers" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
                           </ul>
                         </div>
                         <div>
@@ -154,8 +154,8 @@ export default function Header() {
                           <li><Link href="/auto-transport/international-van-lines-review" className="hover:text-primary hover:underline">International Van lines</Link></li>
                           <li><Link href="/auto-transport/united-van-lines-review" className="hover:text-primary hover:underline">United Van Lines</Link></li>
                           <li><Link href="/auto-transport/penske-review" className="hover:text-primary hover:underline">Penske</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">U-haul</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">Budget</Link></li>
+                          <li><Link href="/auto-transport/u-haul-review" className="hover:text-primary hover:underline">U-haul</Link></li>
+                          <li><Link href="/auto-transport/budget-truck-review" className="hover:text-primary hover:underline">Budget</Link></li>
                         </ul>
                       </div>
 
