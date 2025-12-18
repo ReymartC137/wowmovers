@@ -69,7 +69,7 @@ export default function Header() {
                           <li><Link href="/moving-containers/pods-review" className="hover:text-primary hover:underline">PODS</Link></li>
                           <li><Link href="/moving-containers/smartbox-review" className="hover:text-primary hover:underline">SMARTBOX</Link></li>
                           <li><Link href="/moving-containers/u-haul-review" className="hover:text-primary hover:underline">U-Haul</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">Two Men And A Truck</Link></li>
+                          <li><Link href="/two-men-and-a-truck-moving-review-2" className="hover:text-primary hover:underline">Two Men And A Truck</Link></li>
                         </ul>
                       </div>
 
@@ -78,7 +78,7 @@ export default function Header() {
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Learn More</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
                           <li><Link href="#" className="hover:text-primary hover:underline">What Size Moving Container Do You Need?</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">Things to Consider when using DIY Storage</Link></li>
+                          <li><Link href="/things-to-consider-when-using-diy-storage-for-your-upcoming-move" className="hover:text-primary hover:underline">Things to Consider when using DIY Storage</Link></li>
                           <li><Link href="#" className="hover:text-primary hover:underline">The Average Cost of Moving Containers</Link></li>
                           <li><Link href="#" className="hover:text-primary hover:underline">How Moving Containers Can Save You Money and Stress</Link></li>
                         </ul>
