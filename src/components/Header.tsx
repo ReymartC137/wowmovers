@@ -121,8 +121,8 @@ export default function Header() {
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Learn More</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
                           <li><Link href="/what-to-consider-before-renting-a-moving-truck/" className="hover:text-primary hover:underline">What to Consider Before Renting a Moving Truck</Link></li>
-                          <li><Link href="/best-interstate-moving-companies" className="hover:text-primary hover:underline">Rent The Cheapest Moving Truck</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">The Best Moving Companies That Provides Trailer Rental</Link></li>
+                          <li><Link href="/interstate-moving-companies" className="hover:text-primary hover:underline">Rent The Cheapest Moving Truck</Link></li>
+                          <li><Link href="/trailer-rental" className="hover:text-primary hover:underline">The Best Moving Companies That Provides Trailer Rental</Link></li>
                           <li><Link href="/budget-truck-rental-cost" className="hover:text-primary hover:underline">How Much Does It Cost to Rent A Truck?</Link></li>
                         </ul>
                       </div>
