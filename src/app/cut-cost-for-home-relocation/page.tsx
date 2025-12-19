@@ -86,56 +86,29 @@ export default async function CutCostPage() {
     // Debug: Log content to check for embedded buttons
     console.log('Post Content:', post.content.rendered);
 
-    // Split content to inject sections
-    // This is a naive split based on paragraphs to try and match the visual flow
-    // In a real scenario, we might want more robust parsing
-    // Strip embedded "Related Articles" section from content
-    // The content contains <p><strong>Related Articles:</strong></p> followed by a list
+   
     let cleanedContent = post.content.rendered;
     const relatedArticlesIndex = cleanedContent.indexOf('<p><strong>Related Articles:</strong></p>');
     if (relatedArticlesIndex !== -1) {
         cleanedContent = cleanedContent.substring(0, relatedArticlesIndex);
     }
 
-    // Remove the embedded "Find A Mover" image button
-    // This removes the specific block identified in the content
+   
     const buttonToRemove = '<div class="wp-block-image"><figure class="aligncenter size-full"><a href="https://wowmover.com/get-a-free-quote/"><img decoding="async" width="258" height="66" src="https://wowmover.com/wp-content/uploads/2021/06/button_find-a-mover-2.png" alt="Find A Mover" class="wp-image-13206 skip-lazy" /></a></figure></div>';
     cleanedContent = cleanedContent.replace(buttonToRemove, '');
 
-    // Also try removing it without the specific classes/attributes just in case, or use a regex for more robustness if needed.
-    // Given the log output matched exact string, exact replacement is safest for now to avoid false positives.
-
-    // Remove the 100px spacer above "Are You Ready To Move?"
+    
+    
     const spacerToRemove = '<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>';
     cleanedContent = cleanedContent.replace(spacerToRemove, '');
 
     // Remove duplicate specific paragraph about "all of this however"
     const duplicateParagraph = '<p>All of this, however, is only achievable if you select the appropriate moving company that provides excellent service at a reasonable cost. It would be ideal if you completed your homework on each mover&#8217;s trustworthiness before employing them. Because no two movers charge the same, you should receive quotes from at least three different companies. You may choose the proper mover who meets your budget and relocating criteria after reviewing their company profiles and pricing estimates and deciding who gives the greatest services.</p>';
-    // Logic: Split by the paragraph, if length > 2 (meaning 2+ occurrences), join back keeping only one.
-    // Or simpler: replace 'paragraph + paragraph' with 'paragraph' if they are adjacent.
-    // Or replacing the string globally with a placeholder, then replacing the placeholder once?
-    // Let's use the split/join approach for safety if they are not strictly adjacent but duplicates exists.
-    // The user said "remove THIS duplicated <p>", implying it appears twice.
-    // If adjacent:
+   
     while (cleanedContent.includes(duplicateParagraph + duplicateParagraph)) {
         cleanedContent = cleanedContent.replace(duplicateParagraph + duplicateParagraph, duplicateParagraph);
     }
-    // If not adjacent but duplicated?
-    // Let's check occurrences.
-    // For now, let's assume adjacent based on logs or just remove one instance if strict count > 1.
-    // Actually, simply replacing the first occurrence? No, that leaves the second.
-    // Safe bet: split, if count > 2, rejoin with only 2 parts (1 instance).
-    // const parts = cleanedContent.split(duplicateParagraph);
-    // if (parts.length > 2) {
-    //    cleanedContent = parts[0] + duplicateParagraph + parts.slice(1).join('');
-    // }
-    // Let's try to remove strictly ADJACENT duplicates first which is common in WP glitches.
-    // Also include newlines/spaces check?
-    // Let's grab the simple adjacent case first.
-    // And also just a general dedupe if safely identifiable.
-
-    // Improved dedupe:
-    // If the exact paragraph string appears more than once, only keep the first one.
+   
     const parts = cleanedContent.split(duplicateParagraph);
     if (parts.length > 2) {
         cleanedContent = parts[0] + duplicateParagraph + parts.slice(2).join(''); // This removes the middle parts... wait.
