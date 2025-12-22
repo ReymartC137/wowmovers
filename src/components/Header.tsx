@@ -46,7 +46,7 @@ export default function Header() {
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-4">Moving Containers</h3>
                           <ul className="space-y-3 text-sm text-gray-600">
-                            <li><Link href="/interstate-moving-companies" className="hover:text-primary hover:underline">Best Interstate Moving and Storage</Link></li>
+                            <li><Link href="/best-interstate-moving-companies" className="hover:text-primary hover:underline">Best Interstate Moving and Storage</Link></li>
                             <li><Link href="/top-local-movers" className="hover:text-primary hover:underline">Top Local Movers</Link></li>
                             <li><Link href="/best-moving-containers" className="hover:text-primary hover:underline">Best Moving Container Companies</Link></li>
                           </ul>
@@ -78,7 +78,7 @@ export default function Header() {
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Learn More</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
                           <li><Link href="#" className="hover:text-primary hover:underline">What Size Moving Container Do You Need?</Link></li>
-                          <li><Link href="/things-to-consider-when-using-diy-storage-for-your-upcoming-move" className="hover:text-primary hover:underline">Things to Consider when using DIY Storage</Link></li>
+                          <li><Link href="#" className="hover:text-primary hover:underline">Things to Consider when using DIY Storage</Link></li>
                           <li><Link href="#" className="hover:text-primary hover:underline">The Average Cost of Moving Containers</Link></li>
                           <li><Link href="#" className="hover:text-primary hover:underline">How Moving Containers Can Save You Money and Stress</Link></li>
                         </ul>
@@ -99,7 +99,7 @@ export default function Header() {
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-4">Recommendation</h3>
                           <ul className="space-y-3 text-sm text-gray-600">
-                            <li><Link href="#" className="hover:text-primary hover:underline">Best Moving Truck Rental Companies</Link></li>
+                            <li><Link href="/best-moving-truck-rental-companies-recommendation" className="hover:text-primary hover:underline">Best Moving Truck Rental Companies</Link></li>
                           </ul>
                         </div>
                       </div>
@@ -120,8 +120,8 @@ export default function Header() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Learn More</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
-                          <li><Link href="/what-to-consider-before-renting-a-moving-truck/" className="hover:text-primary hover:underline">What to Consider Before Renting a Moving Truck</Link></li>
-                          <li><Link href="/interstate-moving-companies" className="hover:text-primary hover:underline">Rent The Cheapest Moving Truck</Link></li>
+                          <li><Link href="/what-to-consider-before-renting-a-moving-truck" className="hover:text-primary hover:underline">What to Consider Before Renting a Moving Truck</Link></li>
+                          <li><Link href="/best-interstate-moving-companies" className="hover:text-primary hover:underline">Rent The Cheapest Moving Truck</Link></li>
                           <li><Link href="/trailer-rental" className="hover:text-primary hover:underline">The Best Moving Companies That Provides Trailer Rental</Link></li>
                           <li><Link href="/budget-truck-rental-cost" className="hover:text-primary hover:underline">How Much Does It Cost to Rent A Truck?</Link></li>
                         </ul>
@@ -195,10 +195,10 @@ export default function Header() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Storage Review</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
-                          <li><Link href="#" className="hover:text-primary hover:underline">PODS</Link></li>
+                          <li><Link href="/pods-container" className="hover:text-primary hover:underline">PODS</Link></li>
                           <li><Link href="/storage-companies/1-800-pack-rat" className="hover:text-primary hover:underline">1-800-Pack-Rat</Link></li>
                           <li><Link href="/storage-companies/united-van-lines-storage-review" className="hover:text-primary hover:underline">United Van Lines Storage</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">College Hunks</Link></li>
+                          <li><Link href="/college-hunk-moving" className="hover:text-primary hover:underline">College Hunks</Link></li>
                         </ul>
                       </div>
 
