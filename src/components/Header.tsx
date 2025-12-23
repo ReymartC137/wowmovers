@@ -184,10 +184,10 @@ export default function Header() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Storage Recommendations</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
-                          <li><Link href="#" className="hover:text-primary hover:underline">Best Self-Storage Companies</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">When It's Necessary To Use Climate Controlled Storage?</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">The Ultimate Guide to Storage Unit</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">How To Choose The Right Storage Unit For Your Furniture</Link></li>
+                          <li><Link href="/best-self-storage-companies-recommendation" className="hover:text-primary hover:underline">Best Self-Storage Companies</Link></li>
+                          <li><Link href="/best-interstate-moving-companies" className="hover:text-primary hover:underline">When It's Necessary To Use Climate Controlled Storage?</Link></li>
+                          <li><Link href="/storage-101-the-ultimate-guide-to-storage-unit" className="hover:text-primary hover:underline">The Ultimate Guide to Storage Unit</Link></li>
+                          <li><Link href="/how-to-choose-the-right-storage-unit-for-your-furniture" className="hover:text-primary hover:underline">How To Choose The Right Storage Unit For Your Furniture</Link></li>
                         </ul>
                       </div>
 
