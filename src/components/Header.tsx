@@ -4,15 +4,16 @@ import Link from 'next/link';
 import { Menu, ArrowUpRight } from 'lucide-react';
 import { useState } from 'react';
 import QuoteForm from './QuoteForm';
-
+import MobileDrawer from './MobileDrawer';
 export default function Header() {
-  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
+   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <>
       <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
         {/* Top Row: Logo and CTA */}
-        <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6 border-b border-gray-100">
+          <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6 border-b border-gray-100">
           <Link href="/" className="flex items-center gap-2">
             <img src="/wowmover_logo.png" alt="Wow Mover" className="h-12 w-auto" />
           </Link>
@@ -23,7 +24,10 @@ export default function Header() {
             >
               Get a Quote <ArrowUpRight className="h-4 w-4" />
             </button>
-            <button className="md:hidden p-2">
+            <button
+              className="md:hidden p-2"
+              onClick={() => setIsMobileMenuOpen(true)}
+            >
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle menu</span>
             </button>
@@ -228,6 +232,11 @@ export default function Header() {
         </div>
       </header >
       <QuoteForm isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
+      <MobileDrawer
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+        onQuoteClick={() => setIsQuoteOpen(true)}
+      />
     </>
   );
 }
