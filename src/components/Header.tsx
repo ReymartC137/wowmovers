@@ -81,10 +81,10 @@ export default function Header() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Learn More</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
-                          <li><Link href="#" className="hover:text-primary hover:underline">What Size Moving Container Do You Need?</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">Things to Consider when using DIY Storage</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">The Average Cost of Moving Containers</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">How Moving Containers Can Save You Money and Stress</Link></li>
+                          <li><Link href="/best-interstate-moving-companies" className="hover:text-primary hover:underline">What Size Moving Container Do You Need?</Link></li>
+                          <li><Link href="/things-to-consider-when-using-diy-storage-for-your-upcoming-move" className="hover:text-primary hover:underline">Things to Consider when using DIY Storage</Link></li>
+                          <li><Link href="/best-interstate-moving-companies" className="hover:text-primary hover:underline">The Average Cost of Moving Containers</Link></li>
+                          <li><Link href="/things-to-consider-when-using-diy-storage-for-your-upcoming-move" className="hover:text-primary hover:underline">How Moving Containers Can Save You Money and Stress</Link></li>
                         </ul>
                       </div>
                     </div>
@@ -167,10 +167,10 @@ export default function Header() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Learn More</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
-                          <li><Link href="#" className="hover:text-primary hover:underline">How to Ship your Car Secure and Safe?</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">Car Shipping Costs Explained</Link></li>
-
-                          <li><Link href="#" className="hover:text-primary hover:underline">What's The Cheapest Way and How to Calculate Car Shipping Services</Link></li>
+                          <li><Link href="/auto-transport" className="hover:text-primary hover:underline">How to Ship your Car Secure and Safe?</Link></li>
+                          <li><Link href="/best-interstate-moving-companies" className="hover:text-primary hover:underline">Car Shipping Costs Explained</Link></li>
+ <li><Link href="/shipping-a-car" className="hover:text-primary hover:underline">The Average Cost of Moving Containers</Link></li>
+                          <li><Link href="/things-to-consider-when-using-diy-storage-for-your-upcoming-move" className="hover:text-primary hover:underline">What's The Cheapest Way and How to Calculate Car Shipping Services</Link></li>
                         </ul>
                       </div>
                     </div>
@@ -210,8 +210,8 @@ export default function Header() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Junk Removal Recommendations</h3>
                         <ul className="space-y-3 text-sm text-gray-600">
-                          <li><Link href="#" className="hover:text-primary hover:underline">Best Junk Removal Companies</Link></li>
-                          <li><Link href="#" className="hover:text-primary hover:underline">Why We Love College Hunks Hauling Junk and Moving?</Link></li>
+                          <li><Link href="/best-junk-removal-companies-recommendation" className="hover:text-primary hover:underline">Best Junk Removal Companies</Link></li>
+                          <li><Link href="/college-hunk-moving" className="hover:text-primary hover:underline">Why We Love College Hunks Hauling Junk and Moving?</Link></li>
                         </ul>
                       </div>
 
