@@ -318,14 +318,17 @@ export default function InterStateMovingCompaniesPage() {
                     <p>{company.description}</p>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex flex-col sm:flex-row gap-4">
                     <button className="inline-flex items-center justify-center rounded-full bg-[#76Dba8] px-8 py-3 text-base font-bold text-[#0B2341] shadow-sm hover:bg-[#68c994] transition-colors">
                       Get a Quote <ArrowUpRight className="ml-2 h-4 w-4" />
                     </button>
-                    <button className="inline-flex items-center justify-center rounded-full bg-[#0B2341] px-8 py-3 text-base font-bold text-white shadow-sm hover:bg-[#1a3b5d] transition-colors">
+                    <a
+                      href={`tel:${company.contact.replace(/[^\\d+]/g, '')}`}
+                      className="inline-flex items-center justify-center rounded-full bg-[#0B2341] px-8 py-3 text-base font-bold text-white shadow-sm hover:bg-[#1a3b5d] transition-colors"
+                    >
                       <Phone className="mr-2 h-4 w-4" />
                       {company.contact}
-                    </button>
+                    </a>
                   </div>
                 </div>
 

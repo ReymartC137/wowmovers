@@ -117,13 +117,10 @@ export default async function CutCostPage() {
         cleanedContent = parts.shift() + duplicateParagraph + parts.join('');
     }
 
-    // Split content to inject sections
-    // This is a naive split based on paragraphs to try and match the visual flow
-    // In a real scenario, we might want more robust parsing
+   
     const contentParts = cleanedContent.split('</p>');
 
-    // Re-assemble content with injected blocks
-    // Part 1: Intro text (first 2 paragraphs)
+
     const introContent = contentParts.slice(0, 2).join('</p>') + '</p>';
 
     // Part 2: Middle content (next few paragraphs)
